@@ -1,24 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+
+import PutComp from './components/PutComp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <PutComp firstName={" Jane"} lastName={"Doe"} Age={"Age: 45"} hairColor={"Hair Color: Black"}/>
+
+      <PutComp firstName={" John"} lastName={"Smith"} Age={"Age: 88"} hairColor={"Hair Color: Brown"}/>
+
+      <PutComp firstName={" Millard"} lastName={"Fillmore"} Age={"Age: 50"} hairColor={"Hair Color: Brown"}/>
+
+      <PutComp firstName={" Maria"} lastName={"Smith"} Age={"Age: 62"} hairColor={"Hair Color: Brown"}/>
     </div>
   );
 }
